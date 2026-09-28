@@ -1,0 +1,13 @@
+column,data_type,description
+contact_id,Text,Unique identifier for each customer contact
+customer_id,Text,Synthetic identifier for the customer
+contact_datetime,Datetime,Date and time of the contact
+channel,Text,"Contact channel: Phone, Email, Portal or Chat"
+contact_reason,Text,Primary reason for the customer contact
+team,Text,Synthetic service team handling the contact
+handling_time_min,Decimal,Handling time in minutes
+resolved,Integer (0/1),Whether the contact was resolved
+first_contact_resolution,Integer (0/1),Whether the case was resolved at first contact
+repeat_contact,Integer (0/1),Repeat contact within 7 days for the same contact reason
+days_since_previous_contact,Integer,Days since previous related contact; blank for non-repeat contacts
+customer_satisfaction,Integer (1–5),Synthetic customer satisfaction score
